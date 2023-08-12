@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: beige;
+}
+
+.all_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.web_card{
+    display: flex;
+    border-radius: 15px;
+    background-color: peachpuff;
+    width: 100vh;
+    overflow: hidden;
+}
+.product_display{
+    width: 295px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: inherit;
+}
+
+.column_right {
+    padding: 5%;
+}
+
+
+
+.column_right h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.word_wrap{
+    font-family: 'Fraunces', serif;
+    padding: 20px 0;
+}
+
+.column_right h3{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom:7%;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #228b22;
+    padding: 5% 20%;
+}
+
+
+.price_flex{
+    display: flex;
+    padding-bottom: 8.5%;
+}
+
+.price_flex h1{
+    padding-right: 15px;
+    font-family: 'Fraunces', serif;
+    color: #228b22;
+}
+
+.price_flex h4{
+    text-decoration: line-through;
+}
+
+ .flex_button{
+    font-size: 17px;
+    font-weight: 700;
+    color: whitesmoke;
+    border: none;
+    border-radius: 6.5px;
+ }
+
+.icon{
+    padding-right: 15px;
+}
+
+@media (max-width: 375px) {
+    .web_card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background-color: peachpuff;
+        width: 100vh;
+        overflow: hidden;
+    }
+
+    .product_display{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: inherit;
+    }
+
+    .flex_button{
+        width: 330px;
+     }
+     
+     .price_flex h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
